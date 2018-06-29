@@ -1,0 +1,45 @@
+{
+	"contacts":{
+		"name":"Фабрика печати",
+		"domain":"fact-print.ru",
+		"domain_link":"http://fact-print.ru/",
+		"agreement_page":"agreement",
+		"copyright":"Фабрика печати",
+		"email":"info@fact-print.ru",
+		"phone":"+7 (4862) 44-51-15",  
+		"phone_tel":"+74862445115",   
+		"clock":"<p>Пн-Пт: 8:00-17:00. Перерыв 13:00-14:00</p><p>Сб-Вс: выходной</p>",  
+		"address":"Бульвар Победы, д.6, этаж&nbsp;4, оф.&nbsp;52"
+	},
+	"soc":{
+		"vk":"https://vk.com/orel_sau",
+		"fb":"https://www.facebook.com/groups/orelsau/",
+		"ok":"https://ok.ru/group/",
+		"tw":"https://twitter.com/",
+		"inst":"https://www.instagram.com/orel_sau/"
+	},
+	"page":{
+		"scrollto":"#",
+		"page":"/index.html#",
+		"html":".html",
+		"index":"index",
+		"about":"about",
+		"portfolio":"portfolio",
+		"action":"action",
+		"products":"products",
+		"reviews":"reviews",
+		"products_card":"/products-card.html",
+		"contacts":"contacts",
+		"404":"/404.html",
+		"sitemap":"/sitemap.html",
+		"style":"/style.html",
+		"agreement":"/agreement.html"
+	},	                           
+	"url-path-page":"/",
+	"url-path-css":"/css",
+	"url-path-img":"/img",
+	"url-path-js":"/js",
+	"url-path-plugins":"/plugins",
+	"url-path-favicon":"/favicon",
+	"url-path-docs":"/docs"
+}

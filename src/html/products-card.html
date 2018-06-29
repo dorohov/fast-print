@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>
+		[[azbntple 
+			tpl="/src/block/site/default/head/.html" 
+			title=" "
+			description=" "
+		]] 		
+	</head>
+	<body> 
+		[[azbntple 
+			tpl="/src/block/site/default/navbar/.html"
+			class="navbar-site scroll"
+			navbar_prefix="navbar__"   
+			navbar_mod="  "     
+			navbar_link="{{page.page}}"
+			navbar_html="-block"
+			navbar_scrollto="  "
+		]]
+		[[azbntple  
+			tpl="/src/block/site/page/products-card.html"
+			content_prefix="content-block__"       
+			content_mod="is--products-card"    
+			block_heading_mod="is--page-heading  is--center"
+			block_heading_level="h1"
+			block_heading="Визитки"
+			block_bread_mod="is--center"  
+		]]	
+		[[azbntple 
+			tpl="/src/block/site/default/form/panel.html" 
+			block_prefix="form-panel__"
+			block_mod="is--dark"
+			form_prefix="form__"
+			form_id="fsr"
+			form_mod="is--inline" 
+			form_color="is--white"
+			form_heading="Заказать визитки"
+			form_heading_small="  "
+			form_btn_name="Заказать"
+			form_btn_mod="is--form"
+		]]
+		[[azbntple 
+			tpl="/src/block/site/default/footer/.html"
+			footer_prefix="footer__" 
+		]]
+		[[azbntple tpl="/src/block/site/default/script/script.html" ]]
+		[[azbntple tpl="/src/block/site/default/modals/include.html" ]]
+	</body>
+</html>

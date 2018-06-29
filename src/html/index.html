@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>
+		[[azbntple 
+			tpl="/src/block/site/default/head/.html" 
+			title=" "
+			description=" "
+		]] 		
+	</head>
+	<body class="is--index-page"> 
+		[[azbntple 
+			tpl="/src/block/site/default/navbar/.html"
+			class="navbar-site scroll"
+			navbar_prefix="navbar__"   
+			navbar_mod="is--index"     
+			navbar_link="{{page.scrollto}}"
+			navbar_html="-block"
+			navbar_scrollto="scrollto"
+		]]
+		[[azbntple 
+			tpl="/src/block/site/default/header/panel.html"
+			block_prefix="header-block__"
+			block_heading="Эконом типография полного цикла"
+			block_heading_small="Офсетная и цифровая печать  по низким ценам"
+			block_bg="{{url-path-img}}/temp/bg-header.jpg"
+			content_id="index-block"
+		]]	
+		[[azbntple  
+			tpl="/src/block/site/page/index-adv.html"
+			content_prefix="content-block__"       
+			content_mod="is--adv-index"
+			content_id="adv-block"
+		]]
+		[[azbntple  
+			tpl="/src/block/site/page/index-products.html"
+			content_prefix="content-block__"       
+			content_mod="is--products-index"
+			content_id="{{page.products}}-block"  
+			block_heading_mod="is--index-heading"
+			block_heading_level="h2"
+			block_heading="Продукция"  
+		]]	
+		[[azbntple  
+			tpl="/src/block/site/page/index-action.html"
+			content_prefix="content-block__"       
+			content_mod="is--action-index"
+			content_id="{{page.action}}-block" 
+		]]	
+		[[azbntple  
+			tpl="/src/block/site/page/index-portfolio.html"
+			content_prefix="content-block__"       
+			content_mod="is--portfolio-index"
+			content_id="{{page.portfolio}}-block"  
+			block_heading_mod="is--index-heading"
+			block_heading_level="h2"
+			block_heading="Наши работы"  
+		]]	
+		[[azbntple  
+			tpl="/src/block/site/page/index-reviews.html"
+			content_prefix="content-block__"       
+			content_mod="is--reviews-index"
+			content_id="{{page.reviews}}-block"  
+			block_heading_mod="is--index-heading  is--white"
+			block_heading_level="h2"
+			block_heading="Отзывы"  
+		]]	
+		[[azbntple  
+			tpl="/src/block/site/page/index-about.html"
+			content_prefix="content-block__"       
+			content_mod="is--about-index"
+			content_id="{{page.about}}-block"  
+			block_heading_mod="is--index-heading"
+			block_heading_level="h2"
+			block_heading="О компании"  
+		]]	
+		[[azbntple  
+			tpl="/src/block/site/default/contacts/panel.html"
+			content_prefix="kontakty-panel__"       
+			content_mod="  "
+			content_id="{{page.contacts}}-block"  
+			block_heading_mod="is--index-contacts"
+			block_heading_level="h2"
+			block_heading="Контакты"  
+		]]		
+		[[azbntple 
+			tpl="/src/block/site/default/footer/.html"
+			footer_prefix="footer__" 
+		]]		
+		[[azbntple tpl="/src/block/site/default/modals/include.html" ]]
+		[[azbntple tpl="/src/block/site/default/script/script.html" ]]  
+		[[azbntple tpl="/src/block/site/default/script/googleMap.html" ]]  
+	</body>
+</html>

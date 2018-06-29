@@ -1,0 +1,132 @@
+.card-item__{
+	&card{
+		&.is--adv{
+			max-width: 250px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		&.is--reviews{
+			text-align: center;
+		}
+	}
+	&inner{
+		transition: @trs-site;
+		position: relative;		
+	}
+	&row{}
+	&cols{}
+	&bg{
+		transition: @trs-site;		
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		background-color: fadeout(@b-color-a-hover, 20%);
+		display: flex;
+		align-items: center;
+		padding: 20px;
+		@media @media-point-screen {
+			padding: 2.5vw;
+		}
+		.card-item__card:hover &,
+		.card-item__card.is--active &{
+			opacity: 1;
+		}
+	}
+	&view{		
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 62px;
+		height: 62px;
+		color: @white;
+		svg{display: block;}		
+	}
+	&preview-block{}
+	&preview{
+		display: block;
+		position: relative;
+		&.is--adv{
+			margin-left: auto;
+			margin-right: auto;
+			width: 60px;
+			height: 60px;
+			padding: 10px;
+			border-radius: 50%;
+			border: 2px solid @b-color-a;
+			color: @b-color-a;
+			margin-bottom: 15px;
+			@media @media-point-screen-lg {
+				width: 130px;
+				height: 130px;
+				padding: 25px;
+				border: 4px solid @b-color-a;
+			}
+			svg{display: block;}
+		}	
+		&.is--product{
+			margin-bottom: 20px;
+		}
+		&.is--reviews{
+			margin-bottom: 10px;
+			img{
+				border-radius: 50%;
+				margin: 0 auto;
+			}
+		}
+	}
+	&heading{
+		transition: @trs-site;
+		&.is--adv{
+			.heading4();
+			font-weight: 400;	
+			text-align: center;		
+		}
+		&.is--product{
+			.heading4();
+			text-align: center;
+			.card-item__card:hover &,
+			.card-item__card.is--active &{
+				color: @b-color-a-hover;
+			}
+		}
+		&.is--gallery{
+			color: @white;
+			width: 100%;
+			.heading5();
+			text-align: center;			
+		}
+		&.is--reviews{
+			.heading4();
+			color: @white;
+		}
+	}
+	&heading-small{
+		transition: @trs-site;		
+	}	
+	&date{	
+		display: block;
+		transition: @trs-site;
+		&.is--reviews{
+			color: @yellow-light;
+			margin-bottom: 20px;
+			@media @media-point-screen {
+				margin-bottom: 1.5vw;
+			}
+		}
+	}
+	&note{
+		&.is--reviews{
+			font-style: italic;
+			color: @white;
+		}
+	}
+	&btn{}
+	&elem-group{}
+	&elem{}
+	&elem-icon{}
+
+}
